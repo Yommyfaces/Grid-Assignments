@@ -1,0 +1,146 @@
+body{
+  margin: 0;
+  border: 0;
+}
+
+/* Start of Navbar and NavContent Styling */
+.nav_container{
+  max-width: auto;
+  height: 80px;
+  border: 2px solid black;
+  margin: 1px;
+
+}
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(80px,1fr));
+  grid-template-rows: 80px;
+  grid-gap: 10px;
+  background-color: red;
+  
+}
+
+.nav_container>li{
+  padding: 20px;
+  font-weight: bold;
+  list-style: none;
+  font-size: 25px;
+  border: 5px dotted whitesmoke;
+  font-family: cursive;
+  text-align: center;
+}
+
+a{
+  text-decoration: underline;
+  color: aliceblue;
+}
+/* End of Navbar and NavContent Styling */
+
+
+/* Start of Task 1 Styling */
+.task1_container{
+  max-width: 700px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 2px;
+}
+
+.grid1{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  grid-template-rows: 1fr;
+  grid-gap: 5px;
+}
+.task1_item{
+  background-color: blueviolet;
+  border: 3px solid paleturquoise;
+  padding: 20px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 20px;
+  justify-content: space-between;
+  text-align: center;
+}
+/* End of Task 1 Styling */
+
+
+/* Start of Task 2 Styling */
+.task2_container{
+  max-width: 700px;
+  border: 3px solid lightgreen;
+}
+
+.grid2{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 400px;
+  width: auto;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+  
+}
+
+.item1{
+  grid-column: 1 / span 2;
+  grid-row: 1/ 3;
+  background-color:violet;
+}
+
+.item2{
+  background-color:blue;
+  grid-column:  2/span 3;
+  grid-row: 2/ span 4;
+}
+/* End of Task 1 Styling */
+
+/* Start of Task 3 Styling */
+.task3_container {
+  max-width: 800px;
+}
+
+
+.grid3 {
+  display: grid;
+  height: 400px;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+  grid-template-areas:
+  'header header header header header'
+  'nav nav main main main'
+  'footer footer footer footer footer';
+  /* grid-gap: 10px; */
+  
+}
+
+header {
+  grid-area: header;
+  background-color: #f00;
+  height: 80px;
+}
+
+nav {
+  grid-area: nav;
+  background-color: #0f0;
+  height: 300px;
+
+}
+
+main {
+  grid-area: main;
+  background-color: blue;
+  height: 300px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: black;
+  height: 80px
+}
+/* End of Task 3 Styling */
+
